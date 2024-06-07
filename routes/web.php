@@ -9,6 +9,7 @@ use App\Http\Controllers\PackController;
 use App\Http\Controllers\RegisterController;
 // use App\Http\Controllers\Admin\UserController;
 use App\Models\Hotel;
+use App\Models\HotelServices;
 use App\Models\Pack;
 use Illuminate\Support\Facades\Route;
 
@@ -17,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('admin-hotel', HotelController::class);
 Route::resource('admin-pack', PackController::class);
+Route::resource('admin-services', HotelServices::class);
 
 Route::resource('register', RegisterController::class);
 Route::resource('hotels', HotelBookingController::class);
